@@ -1,0 +1,29 @@
+{
+  "name": "throw-slider",
+  "version": "0.0.1",
+  "description": "Slider with throw effect. All credit goes to GSAP https://codepen.io/GreenSock/pen/ExdyYed",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": [
+    "slider",
+    "throw",
+    "gsap",
+    "carousel",
+    "javascript",
+    "web-components"
+  ],
+  "author": "Torben Larsen",
+  "license": "ISC",
+  "devDependencies": {
+    "gsap": "npm:@gsap/business",
+    "lit": "^2.2.7",
+    "typescript": "^5.0.4"
+  }
+}

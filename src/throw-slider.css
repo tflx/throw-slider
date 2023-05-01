@@ -1,0 +1,19 @@
+:host {
+    --throw-slider-slide-width:auto;
+    --throw-slider-slide-gap: 0;
+
+    display: block;
+}
+
+.wrapper {
+    overflow: hidden;
+    max-width: 100%;
+    display: flex;
+    gap: var(--throw-slider-slide-gap);
+}
+
+::slotted(*) {
+    flex: 1 0 var(--throw-slider-slide-width);
+    margin: 0;
+    padding: 0;
+}
