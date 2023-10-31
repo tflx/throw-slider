@@ -1,10 +1,10 @@
 # throw-slider
+
 Slider with throw effect
 
 All credit goes to GSAP https://codepen.io/GreenSock/pen/ExdyYed
 
 ---
-
 
 ## Usage
 
@@ -56,6 +56,25 @@ import 'throw-slider'
 
 ### Options
 
+| Attribute         | Type    | Default | Description                                                                        |
+| ----------------- | ------- | ------- | ---------------------------------------------------------------------------------- |
+| `autoplay`        | Boolean | false   | Automatically moves                                                                |
+| `speed`           | Number  | 1       | Speed of the autoplay. Higher is faster                                            |
+| `notDraggable`    | Boolean | false   | Remove the dragging option                                                         |
+| `center`          | Boolean | false   | Active element is the one in the center of the container rather than the left edge |
+| `noRepeat`        | Boolean | false   | Stop looping                                                                       |
+| `reversed`        | Boolean | false   | Moves in reverse                                                                   |
+| `noSnap`          | Boolean | false   | Don't snap on items                                                                |
+| `noPauseOnHover`  | Boolean | false   | Don't pause autoplay on hover                                                      |
+| `throwResistance` | Number  | 3500    | Throw resistance, default is 3500                                                  |
 
+### Events
 
+```
+interface ThrowEvent {
+  currentItem: HTMLElement;
+  currentIndex: number;
+}
 
+"onChange": (event: CustomEvent<ThrowEvent>) => void;
+```
