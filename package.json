@@ -1,6 +1,6 @@
 {
   "name": "throw-slider",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Slider with throw effect. All credit goes to GSAP https://codepen.io/GreenSock/pen/ExdyYed",
   "main": "lib/index.js",
   "module": "lib/index.js",
